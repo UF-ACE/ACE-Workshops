@@ -1,0 +1,7 @@
+<launch>
+    <node name="PyGameDemo" pkg="ace2015" type="PyGameDemo.py"
+        output="screen" ns="/robot" />
+    <node name="RobotController" pkg="ace2015" type="RobotController.py"
+        output="screen" ns="/robot" />
+</launch>
+
