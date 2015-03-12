@@ -35,6 +35,13 @@ def detectFaces(image):
 	return image
 	
 def main():
+	#cap = cv2.VideoCapture(0)
+	#cv2.waitkey(0)
+	#ret, frame = cap.read()
+	#img = frame
+	#cv2.imshow('webcam capture', img)
+	#cv2.waitKey(0)
+	
 	# define path to image
 	path = '/home/peach/Desktop/theOffice.jpg'
 	# load image
@@ -48,14 +55,14 @@ def main():
 	#modified_img = convertToHSVScale(img)
 	#modified_img = detectFaces(img)
 	
-	#cv2.imshow('modified image', modified_img)
-	#cv2.waitKey(0)
-	#cv2.destroyAllWindows()
+	cv2.imshow('modified image', modified_img)
+	cv2.waitKey(0)
+	cv2.destroyAllWindows()
 	
 	#b,g,r = cv2.split(img) # get b,g,r 
 	#rgb_img = cv2.merge([r,g,b]) # switch it to rgb 
 	#pyplot.imshow(rgb_img)
-	#pyplot.imshow(modified_img, cmap = pyplot.get_cmap('gray'))
+	#pyplot.imshow(rgb_img, cmap = pyplot.get_cmap('gray'))
 	#pyplot.show()
 	#cv2.waitKey(0)
 	# then close all windows
